@@ -34,4 +34,4 @@ dist
 node_modules/
 .idea/
 .awcache/
-/docker/data
+/data

@@ -1,8 +1,9 @@
 #Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
 #For more information, please see http://aka.ms/containercompat 
 
-FROM sitecore-xp-cd:9.1.1-windowsservercore-1903
+FROM sitecore-xp-standalone:9.1.1-windowsservercore-1903
 ARG source
 WORKDIR /inetpub/sc
-COPY ${source:-obj/Docker/publish}/bin/MessageBus.CD.dll ./bin
+COPY ${source:-obj/Docker/publish}/App_Config ./App_Config/
+COPY ${source:-obj/Docker/publish}/bin/MessageBus.CM.dll ./bin
 EXPOSE 80
