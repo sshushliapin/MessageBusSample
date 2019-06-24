@@ -1,4 +1,4 @@
-﻿namespace MessageBus.CM.Messaging
+﻿namespace MessageBusSample.Messaging
 {
     public class HelloMessage
     {

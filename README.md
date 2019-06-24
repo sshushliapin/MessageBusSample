@@ -7,5 +7,5 @@
    ```powershell
    Import-Module ".\modules\SitecoreImageBuilder" -Force
 
-   SitecoreImageBuilder\Invoke-Build -Path ".\images" -InstallSourcePath C:\tools\SIMRepository -Registry myregistry -Tags "*9.1.1*" -PushMode "WhenChanged"
+   SitecoreImageBuilder\Invoke-Build -Path ".\images" -InstallSourcePath C:\Sitecore -Registry myregistry -Tags "*9.1.1*" -PushMode "Never"
    ```

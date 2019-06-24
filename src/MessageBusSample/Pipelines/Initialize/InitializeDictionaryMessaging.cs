@@ -1,9 +1,9 @@
 ﻿using System;
-using MessageBus.CM.Messaging;
+using MessageBusSample.Messaging;
 using Sitecore.Framework.Messaging;
 using Sitecore.Pipelines;
 
-namespace MessageBus.CM.Pipelines.Initialize
+namespace MessageBusSample.Pipelines.Initialize
 {
 	public class InitializeSampleMessaging
 	{

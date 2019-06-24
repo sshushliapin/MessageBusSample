@@ -2,7 +2,7 @@
 using Sitecore.Abstractions;
 using Sitecore.Framework.Messaging;
 
-namespace MessageBus.CM.Messaging
+namespace MessageBusSample.Messaging
 {
     public class HelloMessageHandler : IMessageHandler<HelloMessage>
     {

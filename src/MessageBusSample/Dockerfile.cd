@@ -4,5 +4,6 @@
 FROM sitecore-xp-cd:9.1.1-windowsservercore-1903
 ARG source
 WORKDIR /inetpub/sc
-COPY ${source:-obj/Docker/publish}/bin/MessageBus.CD.dll ./bin
+COPY ${source:-obj/Docker/publish}/App_Config ./App_Config/
+COPY ${source:-obj/Docker/publish}/bin/MessageBusSample.dll ./bin
 EXPOSE 80

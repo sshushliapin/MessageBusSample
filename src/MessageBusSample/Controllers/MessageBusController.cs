@@ -1,8 +1,8 @@
 ﻿using System.Web.Http;
-using MessageBus.CM.Messaging;
+using MessageBusSample.Messaging;
 using Sitecore.Framework.Messaging;
 
-namespace MessageBus.CM.Controllers
+namespace MessageBusSample.Controllers
 {
     public class MessageBusController : ApiController
     {
@@ -17,9 +17,9 @@ namespace MessageBus.CM.Controllers
         [Route("api/ssc/messagebus")]
         public IHttpActionResult Get()
         {
-            _messageBus.SendAsync(new HelloMessage { Text = "Hello from CM!" });
-
-            return Ok("Hello from CM!");
+            var message = $"Hello from {Request.RequestUri}!";
+            _messageBus.SendAsync(new HelloMessage { Text = message });
+            return Ok(message);
         }
     }
 }
