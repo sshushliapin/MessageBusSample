@@ -6,7 +6,7 @@
     <ProjectGuid>a357cc4b-0fac-49cc-bbe4-38d08179e8a9</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>http://{ServiceIPAddress}</DockerServiceUrl>
-    <DockerServiceName>messagebus.cd</DockerServiceName>
+    <DockerServiceName>messagebussample</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.yml" />
